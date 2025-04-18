@@ -1,0 +1,81 @@
+/* Horizons Style Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
+
+.navbar {
+  background: #1e1f26;
+  padding: 0.5rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+  transition: background 0.3s;
+}
+
+.menu a:hover {
+  background: #2a2c38;
+  border-radius: 8px;
+}
+
+/* Submenus */
+.submenu,
+.sub-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #2a2c38;
+  list-style: none;
+  padding: 0.5rem 0;
+  display: none;
+  min-width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+  z-index: 1000;
+}
+
+.submenu li,
+.sub-dropdown li {
+  position: relative;
+}
+
+.submenu a,
+.sub-dropdown a {
+  color: #fff;
+  padding: 0.75rem 1rem;
+}
+
+.sub-dropdown {
+  left: 100%;
+  top: 0;
+}
+
+/* Show submenus */
+.menu li:hover > .submenu,
+.submenu-item:hover > .sub-dropdown {
+  display: block;
+}
+
