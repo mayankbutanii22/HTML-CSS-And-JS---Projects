@@ -1,0 +1,123 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #001f3f, #0074D9);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container Styling */
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1em;
+  opacity: 0.8;
+}
+
+/* Input Group Styling */
+.input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+#add-button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: green;
+  color: #fff;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-button:hover {
+  background-color: darkgreen;
+}
+
+/* Todo List Styling */
+#todo-list {
+  list-style: none;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+  color: black;
+  font-size: 20px;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.todo-item:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+/* Delete Button Styling */
+.todo-item button.delete-button {
+  background: transparent;
+  border: none;
+  color: #FF4136;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 0;
+}
+
+.todo-item button.delete-button svg {
+  width: 20px;
+  height: 20px;
+}
+
+.todo-item button.delete-button:hover {
+  color: #FF725C;
+}
+

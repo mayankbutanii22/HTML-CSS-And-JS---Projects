@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IT Service Dashboard</title>
+  <link rel="stylesheet" href="Dashboard.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="dashboard">
+    <header class="header">
+      <h1>IT Service Dashboard</h1>
+    </header>
+
+    <div class="cards">
+      <div class="card">
+        <h2>Open Tickets</h2>
+        <p class="value">15 <span class="small">total</span></p>
+        <p class="highlight danger">7 <span class="small">older than 4 hours</span></p>
+      </div>
+
+      <div class="card">
+        <h2>New Joiner Setup</h2>
+        <p class="value">7<span class="small">Outstanding</span></p>
+        <ul>
+          <li>Mayank Butani: 1 Apr</li>
+          <li>Bhavesh Chauhan: 15 Apr</li>
+          <li>Bhavin Parmar: 15 Apr</li>
+          <li>Sahil Malek: 20 Apr</li>
+          <li>Aman Sanvat: 21 Apr</li>
+          <li>Parth Gadhavi: 3 May</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2>Projects</h2>
+        <p class="value">71 <span class="small">tasks</span></p>
+        <div class="bar"><span style="width: 38%">BAU (27)</span></div>
+        <div class="bar"><span style="width: 18%">Cloud upgrade (13)</span></div>
+        <div class="bar"><span style="width: 10%">Induction (7)</span></div>
+        <div class="bar"><span style="width: 34%">CRM system (24)</span></div>
+      </div>
+
+      <div class="card">
+        <h2>Website Uptime</h2>
+        <p class="status up">🟢 Up</p>
+        <p>Last downtime: 448d 13h</p>
+        <p>Response time: 494ms</p>
+      </div>
+
+      <div class="card">
+        <h2>Tickets This Month</h2>
+        <p class="value">148 <span class="small">tickets raised</span></p>
+        <p>84% resolved within 4 hours</p>
+      </div>
+
+      <div class="card success">
+        <h2>IT Service NPS</h2>
+        <p class="value">+78</p>
+      </div>
+
+      <div class="card budget">
+        <h2>Budget Utilization</h2>
+        <p class="value">$296.9K</p>
+        <div class="bar"><span style="width: 84%">84% of $350K</span></div>
+        <canvas id="budgetChart" width="300" height="150"></canvas>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Powered by Geckoboard • 11:00</p>
+    </footer>
+  </div>
+
+  <script src="Dashboard.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #101738;
+  color: #fff;
+}
+
+.dashboard {
+  padding: 20px;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #1c2551;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #a9b7f2;
+}
+
+.value {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.small {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.highlight {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.danger {
+  color: #ff5f5f;
+}
+
+.success {
+  border-left: 4px solid #00d084;
+}
+
+.status.up {
+  color: #00d084;
+  font-weight: bold;
+}
+
+.bar {
+  background: #2b345c;
+  height: 20px;
+  margin: 5px 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card.budget{
+width: 1140px;
+}
+
+.bar span {
+  display: block;
+  height: 100%;
+  background: #2cc6f7;
+  padding-left: 10px;
+  line-height: 20px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #888;
+}
+
+.btn-dark {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  z-index: 1000;
+  padding: 8px 16px;
+  background: #3b82f6;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+
+.btn-dark:hover {
+  background: #2563eb;
+}
+.dark-mode {
+  background-color: #111827;
+  color: #f9fafb;
+}
+
+.dark-mode .card {
+  background-color: #1f2937;
+  color: #f9fafb;
+}
+
+.dark-mode .bar span {
+  background-color: #2563eb;
+}
+
+.dark-mode .btn-filter,
+.dark-mode .btn-dark {
+  background-color: #2563eb;
+}
+
+.dark-mode .input-search {
+  background-color: #374151;
+  border-color: #4b5563;
+  color: #f9fafb;
+}
